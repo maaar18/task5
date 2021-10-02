@@ -1,0 +1,10 @@
+n = abs(int(input("Введите число:")))
+mult = 1
+while n > 0:
+   digit = n % 10 
+   if digit % 2 != 0:
+         mult = mult * digit
+         n = n // 10
+   else:
+      print("Ошибка")
+print(mult)
